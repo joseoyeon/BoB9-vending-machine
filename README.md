@@ -18,6 +18,6 @@ vending-machine
 
 **[참고자료]**
 
-* **[1]** : (https://gitlab.com/gilgil/sns/-/wikis/install-qt/install-qt)[https://gitlab.com/gilgil/sns/-/wikis/install-qt/install-qt]
+* **[1]** : [https://gitlab.com/gilgil/sns/-/wikis/install-qt/install-qt](https://gitlab.com/gilgil/sns/-/wikis/install-qt/install-qt)
 
-* **[2]** : (https://gitlab.com/gilgil/sns/-/wikis/install-qt/report)[https://gitlab.com/gilgil/sns/-/wikis/install-qt/report]
+* **[2]** : [https://gitlab.com/gilgil/sns/-/wikis/install-qt/report](https://gitlab.com/gilgil/sns/-/wikis/install-qt/report)
