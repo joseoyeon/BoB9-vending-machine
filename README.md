@@ -13,3 +13,11 @@ vending-machine
 
 
 ![image](https://user-images.githubusercontent.com/46625602/89996485-d0532780-dcc5-11ea-9689-13d2d86fc3b6.png)
+
+----
+
+**[참고자료]**
+
+* **[1]** : (https://gitlab.com/gilgil/sns/-/wikis/install-qt/install-qt)[https://gitlab.com/gilgil/sns/-/wikis/install-qt/install-qt]
+
+* **[2]** : (https://gitlab.com/gilgil/sns/-/wikis/install-qt/report)[https://gitlab.com/gilgil/sns/-/wikis/install-qt/report]
