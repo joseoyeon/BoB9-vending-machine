@@ -17,6 +17,7 @@ public:
     int money {0};
     void addMoney(int diff);
     void subMoney(int diff);
+    void setButton(int money);
     void resetMoney();
 private slots:
     void on_pb10_clicked();
