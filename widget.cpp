@@ -74,6 +74,12 @@ void Widget::on_pbMilk_clicked()
 void Widget::on_pushButton_clicked()
 {
     QMessageBox m;
-    m.information(nullptr, "Left Money", QString("Left Money: %1").arg(money));
+    int moneyCount[4]={};
+    int moneyTag[4] = {500,100,50,10};
+    for(int i =0; i<4; i++){
+        moneyCount[i]= money/moneyTag[i];
+        money = money%moneyTag[i];
+    }
+    m.information(nullptr, "Left Money", QString("500 : %1\n100 : %2\n50 : %3\n10 : %4").arg(moneyCount[0]).arg(moneyCount[1]).arg(moneyCount[2]).arg(moneyCount[3]));
     resetMoney();
 }
