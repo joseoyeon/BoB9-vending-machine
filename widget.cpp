@@ -7,9 +7,7 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    ui->pbCoffee->setEnabled(false);
-    ui->pbTea->setEnabled(false);
-    ui->pbMilk->setEnabled(false);
+    setButton(0);
 }
 
 Widget::~Widget()
@@ -17,38 +15,26 @@ Widget::~Widget()
     delete ui;
 }
 
+void Widget::setButton(int money){
+    ui->pbCoffee->setEnabled(money >= 100);
+    ui->pbTea->setEnabled(money >= 150);
+    ui->pbMilk->setEnabled(money >= 200);
+}
+
 void Widget::addMoney(int diff){
     money += diff;
     ui->lcdNumber->display(money);
-    if (money >= 100) {
-        ui->pbCoffee->setEnabled(true);
-    }
-    if (money >= 150) {
-        ui->pbTea->setEnabled(true);
-    }
-    if (money >= 200) {
-            ui->pbMilk->setEnabled(true);
-    }
+    setButton(money);
 }
 void Widget::subMoney(int diff){
     money -= diff;
     ui->lcdNumber->display(money);
-    if (money <= 100) {
-        ui->pbCoffee->setEnabled(false);
-    }
-    if (money <= 150) {
-        ui->pbTea->setEnabled(false);
-    }
-    if (money <= 200) {
-            ui->pbMilk->setEnabled(false);
-    }
+    setButton(money);
 }
 void Widget::resetMoney() {
     money =0;
     ui->lcdNumber->display(0);
-    ui->pbCoffee->setEnabled(false);
-    ui->pbTea->setEnabled(false);
-    ui->pbMilk->setEnabled(false);
+    setButton(money);
 }
 void Widget::on_pb10_clicked()
 {
@@ -84,8 +70,6 @@ void Widget::on_pbMilk_clicked()
 {
       subMoney(500);
 }
-
-
 
 void Widget::on_pushButton_clicked()
 {
