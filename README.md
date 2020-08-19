@@ -12,7 +12,6 @@ vending-machine
 4. Reset 버튼을 만들어 잔돈을 QMessageBox 클래스를 이용하여 화면에 보여 준다.
 
 
-![image](https://user-images.githubusercontent.com/46625602/89996485-d0532780-dcc5-11ea-9689-13d2d86fc3b6.png)
 
 ----
 
